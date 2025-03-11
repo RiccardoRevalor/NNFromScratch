@@ -35,7 +35,7 @@ double Neuron::getOutput(const vector<double> &inputs){
     */
 
     //use dot product to calculate the output in a more efficient way
-    acc = dotProduct(inputs, Neuron::weights);
+    acc = dotProduct(Neuron::weights, inputs);
 
     //then add the bias to the accumulator
     return acc + Neuron::bias;
