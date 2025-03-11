@@ -15,7 +15,6 @@ class Neuron {
         vector<double> inputs;
         vector<double> weights;
         double bias;
-        double output;
 
     public:
         Neuron(const vector<double> &inputs, const vector<double> &weights, double bias)
